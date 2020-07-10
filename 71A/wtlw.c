@@ -3,8 +3,8 @@
 int main(void){
     int n;
     scanf("%i", &n);
-    char word[n][100];
-    if(0 <= n && n <= 100){
+    char word[n][128];
+    if(0 <= n && n <= 128){
         for(int i = 0; i < n; i++){
             scanf("%s", word[i]);
         }
