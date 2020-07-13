@@ -19,7 +19,9 @@ int main(void){
         //    ans += prob[j];       
         //}
     }
+    int s = 0;
     for(int j = 0; j < n; j++){
-        
+        s += prob[j];
     }
+    printf("%i\n", s);
 }
