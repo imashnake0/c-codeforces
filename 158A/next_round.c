@@ -7,20 +7,25 @@ int main(void){
     for(int i = 0; i < n; i++){
         scanf("%i", &s[i]);
     }
-    //int sum = 0;
-    //for(int l = 0; l < n; l++){
-    //    sum += s[l];
-    //}
-    int count = 0;
-    if(1 == 1){
-        for(int j = 0; j < n; j++){
-            if(s[j] >= s[k] && s[j] > 0){
+    if(s[k - 1] != 0 && k == n){
+        printf("%i\n", k);
+    }
+    else if(s[k - 1] != 0 && k != n){
+        int count = k;
+        for(int j = k; j < n; j++){
+            if(s[j] == s[k - 1]){
                 count++;
             }
         }
         printf("%i\n", count);
     }
-    //else if(sum == 0){
-    //    printf("%i\n", 0);
-    //}
+    else if(s[k - 1] == 0 && k != n || k == n){
+        int b = 0;
+        for(int j = 0; j < n; j++){
+            if(s[j] != 0){
+                b++;
+            }
+        }
+        printf("%i\n", b);
+    }
 }
