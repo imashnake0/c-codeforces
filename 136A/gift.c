@@ -13,6 +13,11 @@ int main(void){
     }
     for(int k = 0; k < n; k++){
         printf("%i ", temp[k]);
+<<<<<<< HEAD
     }
     printf("\n");
+=======
+        printf("\n");
+    }
+>>>>>>> parent of ae3a8a6... Revert "136A"
 }
